@@ -1,0 +1,107 @@
+.innovation-section {
+    /* width: 1255.24px; */
+    font-family: 'DM Sans', sans-serif;
+    height: 355.92px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    padding-left: 80px;
+    
+  }
+  
+  .text-container {
+    /* flex: 1; */
+    padding-right: 20px;
+    width: 493.5px;
+    height: 98px;
+  }
+  
+  .headline {
+    /* width: 493px; */
+    /* height: 98px; */
+    gap: 7px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 43px;
+    line-height: 49px;
+    font-weight: bold;
+    color: #1E3A8A; /* Adjust color as per design */
+    margin-bottom: 20px;
+  }
+  
+  .description {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 20px;
+    color: #1E3A8A; /* Adjust color as per design */
+    /* margin-bottom: 30px; */
+    /* width: 800px; */
+    line-height: 26px;
+
+  }
+  
+  .button-container {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .talk-btn, .pricing-btn {
+    font-family: 'DM Sans', sans-serif;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    height: Hug (59.1px);
+    width: 495px;
+    gap: 10px;
+  }
+  
+  .talk-btn {
+    font-family: 'DM Sans', sans-serif;
+    background-color: #1E3A8A;
+    color: white;
+    width: 187px;
+    height: 59px;
+  }
+  
+  .pricing-btn {
+    font-family: 'DM Sans', sans-serif;
+    /* background-color: white; Adjust to your desired color */
+    color: #1E3A8A;
+    background-color: white;
+    width: 200px;
+    border: 1px solid;
+    border-color: #1E3A8A;
+  }
+  
+  .image-container {
+    width: 734.24px;
+    height: 70.92px;
+    /* flex: 1; */
+    /* position: relative; */
+    
+  }
+  
+  .section-image {
+    width: 581px;
+    height: 320px;
+    border-radius: 175px;
+    border: 2px solid;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+    z-index: 2; 
+    
+
+  }
+  .ellipse {
+    position: absolute;
+    width: 671.69px; /* Set to the width from the Figma file */
+    height: 283.27px; /* Set to the height from the Figma file */
+    top: 286.14px;
+    left: 705px;
+    border-radius: 50%;
+    transform: rotate(-26.83deg);
+    border: 2px solid #1E3A8A;
+    z-index: 1;
+    
+  }
+ 
