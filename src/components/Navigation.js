@@ -1,27 +1,42 @@
 import { useState } from "react";
-import "../CSS/Navigations.css"; 
+import "../CSS/Navigations.css";
 import Logo from "../Images/Logo/Blue LOGO .png";
 import DownArrowIcon from "./DownArrowIcon";
 import flag from "../Images/Flags/indian.jpg";
-// this is vishal
-const Navigation = () => {
-  const [openDropdown, setOpenDropdown] = useState(null); // To track which dropdown is open
+import { Menu, X } from "lucide-react";
 
-  // Function to toggle dropdown visibility
+const Navigation = () => {
+  const [openDropdown, setOpenDropdown] = useState(null);
+  const [menuOpen, setMenuOpen] = useState(false);
+
   const toggleDropdown = (id) => {
-    setOpenDropdown(openDropdown === id ? null : id); // Toggle the dropdown on click
+    setOpenDropdown(openDropdown === id ? null : id);
   };
 
   return (
     <header className="flex justify-between items-center py-4 px-8 shadow-md bg-white">
       {/* Logo Section */}
-      <div className="items-center">
+      <div className="flex items-center">
         <img src={Logo} alt="iostreak logo" className="h-8" />
       </div>
 
+      {/* Mobile Menu Button */}
+   
+      <div className="md:hidden">
+        <button onClick={() => setMenuOpen(!menuOpen)} className="text-gray-800 focus:outline-none">
+          {menuOpen ? <X size={24} /> : <Menu size={24} />}
+        </button>
+      </div>
+  
       {/* Navigation Links */}
-      <nav className="hidden md:flex space-x-8">
-        <a href="#" className="text-gray-800 font-medium hover:text-blue-600">
+      <nav className={`md:flex space-x-8 ${menuOpen ? "block absolute top-16 left-0 w-full bg-white shadow-md p-4" : "hidden md:block"}`}>
+        <a href="" className="text-gray-800 font-medium hover:text-blue-600 block md:inline-block"  onClick={(e) => {
+        e.preventDefault();
+        const section = document.getElementById("industry");
+        if (section) {
+         section.scrollIntoView({ behavior: "smooth" });
+    }
+  }}>
           Industries
         </a>
 
@@ -35,16 +50,40 @@ const Navigation = () => {
           </button>
           {openDropdown === "services" && (
             <div className="absolute left-0 mt-2 w-48 bg-white border rounded shadow-lg">
-              <a href="#" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">
+              <a href="#" className="block px-4 py-2 text-gray-800 hover:bg-gray-100"onClick={(e) => {
+        e.preventDefault();
+        const section = document.getElementById("services");
+        if (section) {
+         section.scrollIntoView({ behavior: "smooth" });
+    }
+  }} >
                 Web Application Development
               </a>
-              <a href="#" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">
+              <a href="#" className="block px-4 py-2 text-gray-800 hover:bg-gray-100"onClick={(e) => {
+        e.preventDefault();
+        const section = document.getElementById("services");
+        if (section) {
+         section.scrollIntoView({ behavior: "smooth" });
+    }
+  }} >
                 Artificial Intelligence Solutions
               </a>
-              <a href="#" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">
+              <a href="#" className="block px-4 py-2 text-gray-800 hover:bg-gray-100"onClick={(e) => {
+        e.preventDefault();
+        const section = document.getElementById("services");
+        if (section) {
+         section.scrollIntoView({ behavior: "smooth" });
+    }
+  }} >
                 Cybersecurity Services (VAPT)
               </a>
-              <a href="#" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">
+              <a href="#" className="block px-4 py-2 text-gray-800 hover:bg-gray-100"onClick={(e) => {
+        e.preventDefault();
+        const section = document.getElementById("services");
+        if (section) {
+         section.scrollIntoView({ behavior: "smooth" });
+    }
+  }} >
                 Consultancy Services
               </a>
             </div>
@@ -72,18 +111,24 @@ const Navigation = () => {
         </div>
 
         {/* About Link */}
-        <a href="#" className="text-gray-800 font-medium hover:text-blue-600">
+        <a href="#" className="text-gray-800 font-medium hover:text-blue-600 block md:inline-block" onClick={(e) => {
+        e.preventDefault();
+        const section = document.getElementById("support");
+        if (section) {
+         section.scrollIntoView({ behavior: "smooth" });
+    }
+  }} >
           About
         </a>
       </nav>
 
-      {/* Login Section */}
-      <div className="flex items-center space-x-4">
-        <button className="border border-gray-400 px-4 py-2 rounded-full text-gray-800 hover:bg-gray-100">
+      {/* Login Section - Hidden on Mobile */}
+      <div className="hidden">
+        <button className="Login">
           Log in
         </button>
-        <span className="text-gray-800 font-bold">0101-1110-100</span>
-        <img src={flag} alt="India Flag" className="h-5 w-5" />
+        <span className="number">0101-1110-100</span>
+        <img src={flag} alt="India Flag" className="flag" />
       </div>
     </header>
   );

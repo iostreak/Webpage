@@ -1,0 +1,81 @@
+.iostreak-section {
+    background-color: #1e3a8a;
+    color: white;
+    padding: 40px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1139px;
+    height: auto;
+    margin: 300px auto 50px; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 2;
+  }
+  
+  .iostreak-content {
+    flex: 1;
+    max-width: 750px;
+    padding: 20px;
+  }
+  
+  .iostreak-title {
+    font-family: 'DM Sans', sans-serif;
+    background: white;
+    color: #1e3a8a;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 40px;
+    font-weight: bold;
+    font-size: 25px;
+  }
+  
+  .iostreak-text {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.6;
+    margin-top: 15px;
+  }
+  
+  .iostreak-logo-container {
+    flex: 0.3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .iostreak-logo {
+    width: 234px;
+    height: auto;
+  }
+  
+  /* ✅ Fix spacing for upper section */
+  .upper-section {
+    margin-bottom: 100px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1200px) {
+    .iostreak-section {
+      flex-direction: column;
+      text-align: center;
+      padding: 30px;
+    }
+    
+    .iostreak-content {
+      max-width: 90%;
+    }
+  
+    .iostreak-logo-container {
+      margin-top: 20px;
+    }
+  
+    .iostreak-logo {
+      width: 180px;
+    }
+  }
+  

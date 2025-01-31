@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import '../CSS/InnovationSection.css';
-import poster from '../Images/Flags/poster.png'
+import poster from '../Images/Other/Group 16664.png';
 
 const InnovationSection = () => {
   // const[addTalk, setaddTalk]=useState();
@@ -14,7 +14,7 @@ const InnovationSection = () => {
 
     <section className="innovation-section">
       <div className="text-container">
-        <h1 className="headline">Innovative IT Solutions for a Digital Tomorrow</h1>
+        <h1 className="headline">Transforming IT Solutions with a Streak of Innovation</h1>
         <p className="description">
           Transforming businesses with cutting-edge technology and future-ready strategies.
         </p>
@@ -29,9 +29,11 @@ const InnovationSection = () => {
           alt="Innovation Section" 
           className="section-image"
         />
-         <div className="ellipse"></div>
+         {/* <div className="ellipse"></div> */}
       </div>
+      {/* <br></br> */}
     </section>
+    
   );
 };
 

@@ -6,11 +6,12 @@ header {
     padding: 1rem 2rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     background-color: white;
+    justify-content: space-between;
+
   }
   header img {
     height: 2rem;
-  }
-  
+  }  
   nav {
     display: flex;
     gap: 30px;
@@ -78,13 +79,6 @@ header {
   nav .relative .absolute a:hover {
     background-color: #f7fafc;
   }
-  header .flex.items-center {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    padding-left: 310px;
-  }
-  
   header .flex.items-center button {
     border: 1px solid #e2e8f0;
     padding: 0.5rem 1rem;
@@ -106,7 +100,87 @@ header {
   }
   
   header .flex.items-center img {
-    height: 25px;
+    height: 31.72px;
+    width: 170px;
+  }
+  .md\:hidden button {
+    display: none;
+  }
+  .Login{
+    width: 85px;
+    height: 36px;
+    background-color: white;
+    color: #1E3A8A;
+    border-radius: 10px;
+    margin-right: 10px;
+  }
+  .number{
+    /* width: ; */
+    height: 24px;
+    margin: 10px;
+    font-size: 16px;
+    color: #1E3A8A;
+  }
+  .flag{
     width: 25px;
+  height: 15px;
+  }
+  /* Responsive Navigation */
+@media (max-width: 1024px) {
+  nav {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .md\:hidden button {
+    display: none;
+  }
+}
+
+
+@media (max-width: 768px) {
+  nav {
+    position: absolute;
+    top: 51px;
+    left: 185px;
+    /* width: 100%; */
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: none;
   }
   
+  .md\:hidden button {
+    display: block;
+  }
+  
+  .block {
+    display: block !important;
+  }
+
+  /* .hidden.md\:flex {
+    display: none !important;
+  } */
+  header .flex.items-center img {
+    height: 25.72px;
+    width: 115px;
+  }
+  .hidden{
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 10px;
+  }
+
+  .logo img {
+    height: 30px;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+  .display{
+    display: none;
+  }
+}

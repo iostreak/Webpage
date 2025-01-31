@@ -1,0 +1,92 @@
+.see-iostreak-container {
+    /* width: 1255px; */
+    /* height: 215px; */
+    background-color: #1E3A8A;
+    color: white;
+    /* padding: 50px; */
+    margin: 40px 50px;
+    position: relative;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .see-iostreak-title {
+    padding: 50px;
+    font-size: 36px;
+    font-family: 'DM Sans', sans-serif;
+    /* margin-bottom: 20px; */
+  }
+  
+  .see-iostreak-button {
+    background-color: white;
+    color: #1E3A8A;
+    padding: 15px 32px;
+    margin: 20px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    text-decoration: none;
+  }
+  
+  .see-iostreak-button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Tablet and medium screens */
+@media (max-width: 1200px) {
+  .see-iostreak-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .see-iostreak-title {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+
+  .see-iostreak-button {
+    padding: 12px 28px;
+    font-size: 16px;
+  }
+}
+
+/* Mobile screens */
+@media (max-width: 768px) {
+  .see-iostreak-container {
+    margin: 20px;
+    padding: 15px;
+  }
+
+  .see-iostreak-title {
+    font-size: 26px;
+    margin-bottom: 10px;
+  }
+
+  .see-iostreak-button {
+    padding: 10px 24px;
+    font-size: 14px;
+  }
+}
+
+/* Small mobile screens */
+@media (max-width: 480px) {
+  .see-iostreak-container {
+    margin: 15px;
+    padding: 10px;
+  }
+
+  .see-iostreak-title {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  .see-iostreak-button {
+    padding: 8px 20px;
+    font-size: 14px;
+  }
+}
